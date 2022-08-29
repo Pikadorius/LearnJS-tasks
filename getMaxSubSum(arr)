@@ -1,0 +1,12 @@
+function getMaxSubSum(arr) {
+    let maxSum=0;
+
+    for(let i=0; i<arr.length; i++) {
+        let checkSum=0;
+        for( let j=i; j<arr.length; j++) {
+            checkSum+=arr[j];
+            maxSum=Math.max(maxSum, checkSum);
+        }
+    }
+    return maxSum;
+}
