@@ -1,0 +1,14 @@
+function sumInput() {
+    let sum=[];
+    while(true) {
+        let value=prompt('Enter a number');
+        if(value==='' || value===null || !isFinite(value)) break;
+        sum.push(+value);
+    }
+    console.log(sum); 
+    let total=0;
+    for (let i of sum) {
+        total+=i;
+    }
+    return total;
+}
