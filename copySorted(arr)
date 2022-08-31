@@ -1,0 +1,6 @@
+let arr = ["HTML", "JavaScript", "CSS"];
+
+
+function copySorted(arr) {
+  return arr.concat().sort();
+}
