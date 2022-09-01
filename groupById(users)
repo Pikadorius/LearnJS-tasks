@@ -1,0 +1,6 @@
+function groupById(users) {
+  return users.reduce( (acum, item) => {
+    acum[item.id]=item;
+    return acum;
+    }, {})
+}
