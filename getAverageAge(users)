@@ -1,0 +1,12 @@
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 29 };
+
+let arr = [ vasya, petya, masha ];
+undefined
+
+let getAverageAge = (users) => users.reduce( (sum, item)=> sum+item.age,0) /users.length;
+undefined
+
+getAverageAge(arr);
+28
