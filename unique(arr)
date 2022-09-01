@@ -1,0 +1,8 @@
+let unique = (arr) => {
+  let newArr=[];
+  
+  for(let key of arr) {
+    if (!newArr.includes(key)) newArr.push(key);
+  }
+  return newArr;
+  }
